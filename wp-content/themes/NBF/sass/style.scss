@@ -1,0 +1,17 @@
+/**
+  Theme Name: Night Bear Foto
+  Theme URI: https://github.com/katiewelton/NBF
+  Version: 1.0
+  Author: Katie Welton
+  Author URI: https://github.com/katiewelton/NBF
+  Description: Night Bear Foto theme by Katie Welton
+*/
+
+@import 'compass';
+@import 'compass/reset';
+
+@import '_tools/variables';
+@import '_tools/mixins';
+
+@import '_global/gridz.scss';
+@import '_global/elements.scss';

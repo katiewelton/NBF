@@ -1,0 +1,39 @@
+@mixin vertical-center($position: relative) {
+  @include translateY(-50%);
+  position: $position;
+  top: 50%;
+}
+
+@mixin horizontal-center($position: relative) {
+  @include translateX(-50%);
+  left: 50%;
+  position: $position;
+}
+
+@mixin absolute-center($position: relative) {
+  @include translate(-50%, -50%);
+  left: 50%;
+  position: $position;
+  top: 50%;
+}
+
+@mixin font-size($size) {
+  font-size: ($size * 10) + px;
+  font-size: $size + rem;
+}
+
+@mixin zoom($zoomLevel) {
+  -webkit-transform: scale($zoomLevel);
+  -webkit-transform-origin: 0 0;
+  -moz-transform: scale($zoomLevel);
+  -moz-transform-origin: 0 0;
+  -ms-transform: scale($zoomLevel);
+  -ms-transform-origin: 0 0;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+}
