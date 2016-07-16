@@ -1,0 +1,32 @@
+.cta {
+  @include align-items(center);
+  @include justify-content(center);
+  background-color: $cta-background-colour;
+  color: $cta-text-colour;
+  font-weight: 300;
+  margin-top: $division-width;
+  padding: 40px;
+}
+
+.cta-box {
+  @include flex-direction(column);
+  @include justify-content(center);
+  height: 100%;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.cta-button {
+  @include border-radius(3px);
+  @include transition(all .3s ease);
+  border: 2px solid $_white;
+  font-weight: 400;
+  margin: 20px 0;
+  padding: 20px 20px 13px;
+  width: 200px;
+
+  &:hover {
+    border-color: $_raisin;
+    color: $_white;
+  }
+}

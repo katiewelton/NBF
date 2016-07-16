@@ -6,16 +6,15 @@ Class CustomPostTypes {
   }
 
   public function initialize_cpts() {
-    $custom_post_types['project'] = [
+    $custom_post_types['photos'] = [
       'labels'          => [
-        'name'          => 'Projects',
-        'singular_name' => 'Project'
+        'name'          => 'Photos',
+        'singular_name' => 'Photo'
       ],
       'public'            => true,
       'menu_position'     => '26.982',
-      'menu_icon'         => 'dashicons-edit',
+      'menu_icon'         => 'dashicons-camera',
       'capability_type'   => 'post',
-      'taxonomies'        => ['project-type'],
       'supports'          => [
         'title',
         'editor',
@@ -23,7 +22,7 @@ Class CustomPostTypes {
         'page-attributes'
       ],
       'rewrite'      => [
-        'slug'       => 'our-work',
+        'slug'       => 'gallery',
         'with_front' => false
       ],
     ];

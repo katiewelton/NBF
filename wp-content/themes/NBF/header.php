@@ -7,16 +7,21 @@
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
     <?php wp_head(); ?>
 
-    <?php if($meta_data): ?>
-
-      <meta property="og:title" content="<?php echo $meta_data->title; ?>" />
-      <meta property="og:type" content="website"/>
-      <meta property="og:url" content="<?php echo $meta_data->url; ?>" />
-      <meta property="og:image" content="<?php echo $meta_data->image; ?>" />
-      <meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
-      <meta property="og:description" content="<?php echo $meta_data->excerpt; ?>" />
-
-    <?php endif; ?>
-
   </head>
   <body <?php body_class(); ?>>
+
+    <header>
+      <a href="<?php echo get_site_url(); ?>" class="logo"></a>
+
+      <?php
+      wp_nav_menu([
+        'theme_location' => 'main_menu',
+        'container'      => false,
+        'menu_class'     => 'header-menu'
+      ]);
+
+      get_template_part('templates/footer', 'tpl');
+      ?>
+
+      <a href="<?php echo get_site_url(); ?>" class="logo"></a>
+    </header>

@@ -18,7 +18,6 @@ Class CustomMetaboxes {
     }
 
     add_action('cmb2_init', [$this, 'cmb2_nbf_metaboxes']);
-    add_action('cmb2_admin_init', [$this, 'cmb2_nbf_register_taxonomy_metabox']);
   }
 
   public function cmb2_nbf_metaboxes() {

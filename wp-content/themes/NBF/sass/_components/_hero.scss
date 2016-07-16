@@ -1,0 +1,10 @@
+.hero {
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include align-items(center);
+  background-color: $hero-colour;
+  height: 400px;
+  margin-top: $division-width;
+  padding: 40px 0;
+  width: 100%;
+}
