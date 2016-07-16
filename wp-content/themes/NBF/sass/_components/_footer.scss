@@ -1,0 +1,12 @@
+.footer-logo {
+  @include transform(scale(1));
+  @include transition(transform .3s);
+  background-image: url('images/whitebear2pt.png');
+  background-size: cover;
+  height: 120px;
+  width: 140px;
+
+  &:hover {
+    @include transform(scale(1.1));
+  }
+}

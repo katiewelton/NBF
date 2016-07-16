@@ -1,0 +1,48 @@
+.logo {
+  @include transform(scale(1));
+  @include transition(transform .3s);
+  background-image: url('images/bear2pt.png');
+  background-size: cover;
+  height: 60px;
+  width: 70px;
+
+  &:hover {
+    @include transform(scale(1.1));
+  }
+}
+
+.header-menu {
+  @include display-flex;
+  @include justify-content(space-around);
+  @include align-items(center);
+  @include flex(1);
+  height: 100%;
+  padding: 0 40px;
+}
+
+.menu-item {
+  @include font-size(2.6);
+  font-weight: 300;
+
+  a {
+    color: $nav-item-colour;
+    display: inline-block;
+    font-weight: 300;
+    text-decoration: none;
+
+    &::after {
+      @include transition(width .3s ease, background-color .3s ease);
+      background: transparent;
+      content: '';
+      display: block;
+      height: 1px;
+      margin: auto;
+      width: 0;
+    }
+
+    &:hover::after {
+      background: $nav-item-colour;
+      width: 100%;
+    }
+  }
+}

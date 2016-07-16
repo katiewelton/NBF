@@ -1,0 +1,19 @@
+.social-bar {
+  @include justify-content(center);
+  @include align-items(center);
+  background-color: $social-bar-colour;
+  height: 80px;
+  margin-top: $division-width;
+}
+
+.fa {
+  @include font-size(4);
+  @include transition(color .3s ease, transform .3s ease);
+  color: $social-icon-colour;
+  margin: 0 20px;
+
+  &:hover {
+    @include transform(rotate(360deg));
+    color: $_raisin;
+  }
+}

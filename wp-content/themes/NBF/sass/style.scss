@@ -9,9 +9,17 @@
 
 @import 'compass';
 @import 'compass/reset';
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300);
 
 @import '_tools/variables';
 @import '_tools/mixins';
 
-@import '_global/gridz.scss';
-@import '_global/elements.scss';
+@import '_global/gridz';
+@import '_global/elements';
+
+@import '_components/hero';
+@import '_components/nav';
+@import '_components/social-bar';
+@import '_components/site-intro';
+@import '_components/home-cta';
+@import '_components/footer';
