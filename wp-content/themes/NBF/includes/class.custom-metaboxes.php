@@ -29,4 +29,29 @@ Class CustomMetaboxes {
       if($file->isFile()) require_once($file->getPathname());
     }
   }
+
+  public function cmb2_nbf_register_taxonomy_metabox() {
+    $terms_prefix = '_nbf_cmb2_term_';
+
+    $cmb2_term = new_cmb2_box([
+      'id'           => $terms_prefix . 'edit',
+      'title'        => __( 'Category Metabox', 'cmb2'),
+      'object_types' => ['term'],
+      'taxonomies'   => ['category', 'shoots'],
+    ]);
+
+    $cmb2_term->add_field([
+      'name'     => __( 'Order', 'cmb2' ),
+      'id'       => $terms_prefix . 'order',
+      'type'     => 'title',
+      'on_front' => false,
+    ]);
+
+    $cmb2_term->add_field([
+      'name' => __( 'Add the order number to this shoot', 'cmb2' ),
+      'desc' => __( 'The order is ascending - 1 will appear first on the page', 'cmb2' ),
+      'id'   => $terms_prefix . 'order_number',
+      'type' => 'text',
+    ]);
+  }
 }

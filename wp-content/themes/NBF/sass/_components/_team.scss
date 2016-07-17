@@ -1,0 +1,43 @@
+.team-box {
+  @include justify-content(space-around);
+  @include align-items(center);
+  border-bottom: 2px solid $_green;
+
+  &:nth-child(even) {
+    @include flex-direction(row-reverse);
+
+    .team-name {
+      padding-left: 0;
+    }
+
+    .team-image {
+      margin-right: 40px;
+    }
+  }
+
+  &:nth-child(odd) {
+    .team-name {
+      padding-right: 0;
+    }
+
+    .team-image {
+      margin-left: 40px;
+    }
+  }
+}
+
+.team-image {
+  height: auto;
+}
+
+.team-name {
+  padding: 40px;
+}
+
+.team-details {
+  @include font-size(1.8);
+  @include flex-grow(1);
+  color: $_white;
+  padding: 80px;
+  width: calc(100% / 5);
+}
