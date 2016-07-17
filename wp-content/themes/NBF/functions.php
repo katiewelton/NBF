@@ -71,6 +71,7 @@ if(function_exists('__autoload')) {
 function include_additional_files() {
   new WordPressHelpers();
   new CustomPostTypes();
+  new TaxonomyFields();
 
   if(is_admin()) {
     new CustomMetaboxes();
@@ -87,7 +88,7 @@ function add_ie_xua_header() {
 }
 add_action('send_headers', 'add_ie_xua_header');
 
-add_image_size('banner-image', 1800, 880, true);
+add_image_size('team-image', 220, 220, true);
 
 function get_template_output($file) {
   ob_start();
