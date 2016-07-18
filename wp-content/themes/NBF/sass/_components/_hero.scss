@@ -4,7 +4,7 @@
   @include align-items(center);
   background-color: $hero-colour;
   height: 400px;
-  margin-top: $division-width;
+  margin: $division-width 0;
   padding: 40px 0;
   width: 100%;
 }

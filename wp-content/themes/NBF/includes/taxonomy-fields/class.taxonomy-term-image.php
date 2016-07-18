@@ -29,7 +29,7 @@ Class TaxonomyTermImage {
       wp_enqueue_media();
       wp_register_script(
         'term-image-uploader',
-        $template_uri . '/js/term-image-uploader.js',
+        $template_uri . '/js/admin/term-image-uploader.js',
         '',
         false,
         true
@@ -37,7 +37,7 @@ Class TaxonomyTermImage {
       wp_enqueue_script('term-image-uploader');
       wp_register_style(
         'term-image-uploader-styles',
-        $template_uri . '/css/term-image-uploader.css'
+        $template_uri . '/css/admin/term-image-uploader.css'
       );
       wp_enqueue_style('term-image-uploader-styles');
     }

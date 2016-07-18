@@ -25,16 +25,18 @@ html {
 body {
   @include font-size(2.6);
   background-color: $body-colour;
+  font-weight: 300;
 }
 
 h1 {
   @include font-size(10);
   color: $title-colour;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
-  @include font-size(6);
+  @include font-size(5.4);
   color: $subtitle-colour;
   font-weight: 100;
 }
