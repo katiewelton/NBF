@@ -64,7 +64,7 @@ Class CustomPostTypes {
           'all_items'         => __('All Shoots'),
           'parent_item'       => __('Parent Shoot'),
           'parent_item_colon' => __('Parent Shoot:'),
-          'edit_item'         => __('Edit Shoot Details'),
+          'edit_item'         => __('Edit Shoot'),
           'update_item'       => __('Update Shoot'),
           'add_new_item'      => __('Add New Shoot'),
           'new_item_name'     => __('New Shoot Name'),
@@ -72,7 +72,7 @@ Class CustomPostTypes {
         ],
         'show_admin_column' => true,
         'rewrite'      => [
-          'slug'       => 'shoots'
+          'slug'       => 'gallery'
         ],
         'hierarchical' => true
       ]
@@ -80,6 +80,7 @@ Class CustomPostTypes {
 
     $this->register_custom_taxonomies($custom_taxonomies);
   }
+
 
   private function register_custom_post_types($cpts) {
     foreach($cpts as $cpt => $cpt_args) {

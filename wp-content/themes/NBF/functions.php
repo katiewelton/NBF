@@ -89,6 +89,7 @@ function add_ie_xua_header() {
 add_action('send_headers', 'add_ie_xua_header');
 
 add_image_size('team-image', 220, 220, true);
+add_image_size('shoots-cover', 940, 630, true);
 
 function get_template_output($file) {
   ob_start();

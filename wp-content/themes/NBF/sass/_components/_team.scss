@@ -1,7 +1,9 @@
 .team-box {
   @include justify-content(space-around);
   @include align-items(center);
+  @include flex-grow(1);
   border-bottom: 2px solid $_green;
+  min-height: 260px;
 
   &:nth-child(even) {
     @include flex-direction(row-reverse);
@@ -24,6 +26,10 @@
       margin-left: 40px;
     }
   }
+
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 .team-image {
@@ -35,7 +41,6 @@
 }
 
 .team-details {
-  @include font-size(1.8);
   @include flex-grow(1);
   color: $_white;
   padding: 80px;

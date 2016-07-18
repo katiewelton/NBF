@@ -13,17 +13,17 @@ $query_args = [
 $results = $team->query($query_args);
 ?>
 
-<div class="site-intro">
+<article class="page-intro">
   <p>NightBearFoto began with two friends sharing a passion.
   <p>The team has since grown to five permanent members</p>
   <p>who have honed their photographic skills,</p>
   <p>adapted their light sources and now work together to create</p>
   <p>portrait, landscape and abstract lightpaintings.</p>
-</div>
+</article>
 
 <?php if($results->have_posts()): ?>
 
-  <div class="team grid">
+  <section class="team grid">
 
     <?php while($results->have_posts()): $results->the_post();?>
 
@@ -35,8 +35,14 @@ $results = $team->query($query_args);
 
     <?php endwhile; ?>
 
-  </div>
+  </section>
 
-<?php
-endif;
-get_footer();
+<?php endif; ?>
+
+<section class="social-bar grid">
+  <a href="https://www.facebook.com/areyoubearenough" target="_blank"><i class="fa fa-facebook-square"></i></a>
+  <a href="https://www.instagram.com/nightbearfoto/" target="_blank"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/nightbearfoto" target="_blank"><i class="fa fa-twitter-square"></i></a>
+</section>
+
+<?php get_footer();

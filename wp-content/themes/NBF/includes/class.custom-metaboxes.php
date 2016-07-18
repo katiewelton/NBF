@@ -18,6 +18,7 @@ Class CustomMetaboxes {
     }
 
     add_action('cmb2_init', [$this, 'cmb2_nbf_metaboxes']);
+    add_action('cmb2_admin_init', [$this, 'cmb2_nbf_register_taxonomy_metabox']);
   }
 
   public function cmb2_nbf_metaboxes() {
@@ -48,8 +49,8 @@ Class CustomMetaboxes {
     ]);
 
     $cmb2_term->add_field([
-      'name' => __( 'Add the order number to this shoot', 'cmb2' ),
-      'desc' => __( 'The order is ascending - 1 will appear first on the page', 'cmb2' ),
+      'name' => __( 'Add the order number to this project type', 'cmb2' ),
+      'desc' => __( 'The order is ascending - 1 will appear first', 'cmb2' ),
       'id'   => $terms_prefix . 'order_number',
       'type' => 'text',
     ]);
