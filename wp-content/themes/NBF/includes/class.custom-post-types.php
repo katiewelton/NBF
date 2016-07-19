@@ -72,7 +72,7 @@ Class CustomPostTypes {
         ],
         'show_admin_column' => true,
         'rewrite'      => [
-          'slug'       => 'gallery'
+          'slug'       => 'shoots'
         ],
         'hierarchical' => true
       ]

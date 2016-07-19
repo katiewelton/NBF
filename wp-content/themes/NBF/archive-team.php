@@ -14,7 +14,7 @@ $results = $team->query($query_args);
 ?>
 
 <article class="page-intro">
-  <p>NightBearFoto began with two friends sharing a passion.
+  <p>NightBearFoto began with two friends sharing a passion.</p>
   <p>The team has since grown to five permanent members</p>
   <p>who have honed their photographic skills,</p>
   <p>adapted their light sources and now work together to create</p>
