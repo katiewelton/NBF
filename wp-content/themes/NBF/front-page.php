@@ -13,7 +13,7 @@ get_header();
   </article>
 
   <section class="social-bar grid">
-    <a href="https://www.facebook.com/areyoubearenough" target="_blank"><i class="fa fa-facebook-square"></i></a>
+    <a href="https://www.facebook.com/nightbearfoto" target="_blank"><i class="fa fa-facebook-square"></i></a>
     <a href="https://www.instagram.com/nightbearfoto/" target="_blank"><i class="fa fa-instagram"></i></a>
     <a href="https://twitter.com/nightbearfoto" target="_blank"><i class="fa fa-twitter-square"></i></a>
   </section>

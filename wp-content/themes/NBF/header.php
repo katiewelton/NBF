@@ -23,5 +23,5 @@
       get_template_part('templates/footer', 'tpl');
       ?>
 
-      <a href="<?php echo get_site_url(); ?>" class="logo"></a>
+      <a href="<?php echo get_site_url(); ?>" class="logo right"></a>
     </header>
