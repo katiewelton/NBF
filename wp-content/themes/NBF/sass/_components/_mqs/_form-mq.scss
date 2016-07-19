@@ -1,0 +1,53 @@
+@media only screen and (max-width: 580px) {
+  .wdform_page {
+
+    .wdform_row .wdform-field {
+      width: 350px !important;
+
+      .wdform-label-section {
+        width: 90px !important;
+      }
+
+      .wdform-label {
+        @include font-size(2.4);
+      }
+
+      .wdform-element-section {
+        width: 250px !important;
+      }
+    }
+
+    .wdform_section .button-submit {
+      width: 250px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .wdform_page {
+    height: 500px;
+
+    .wdform_row .wdform-field {
+      padding-left: 10px;
+      width: 300px !important;
+
+      .wdform-label-section {
+        width: 70px !important;
+      }
+
+      .wdform-label {
+        @include font-size(2);
+      }
+
+      .wdform-element-section {
+        width: 200px !important;
+      }
+    }
+
+    .wdform_section .button-submit {
+      @include font-size(2.4);
+      width: 200px;
+    }
+  }
+}

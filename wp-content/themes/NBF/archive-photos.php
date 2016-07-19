@@ -40,7 +40,12 @@ foreach($terms as $term):
 
   <a href ="<?php echo $link; ?>" class="gallery-box">
     <h2><?php echo $name; ?></h2>
-    <img alt="<?php echo $name; ?> category" src="<?php echo $image; ?>" class="cover" />
+    <div class= "image-container">
+      <img alt="<?php echo $name; ?> category" src="<?php echo $image; ?>" class="cover" />
+      <div class="hover">
+        <div class="hover-plus"><i class="fa fa-plus"></i></div>
+      </div>
+    </div>
   </a>
 
 <?php endforeach; ?>

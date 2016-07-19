@@ -31,8 +31,41 @@
   h2 {
     margin-bottom: 20px;
   }
+
+  &:hover {
+    .hover {
+      opacity: 1;
+    }
+  }
 }
 
+.image-container {
+  position: relative;
+}
+
+.hover {
+  @include transition(opacity .3s ease);
+  background-color: rgba($_orange, .5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hover-plus {
+  @include font-size(3);
+  @include absolute-center(absolute);
+  background-color: ($_orange);
+  color: $_white;
+  height: 40px;
+  width: 40px;
+
+  .fa {
+    margin: 1px 5px;
+  }
+}
 
 .cover {
   width: calc(50vw - 15px);
