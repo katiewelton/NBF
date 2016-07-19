@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1045px) {
+  .team-details {
+    @include font-size(2.4);
+    padding: 80px 40px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .team-details {
+    padding: 40px;
+  }
+
+  .team-name {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .team-details {
+    @include font-size(2);
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .team-box {
+    padding: 20px;
+
+    &:nth-child(even),
+    &:nth-child(odd) {
+      @include flex-direction(column);
+
+      .team-image {
+        margin: 0;
+      }
+    }
+  }
+
+  .team-details {
+    padding: 0;
+    width: 100%;
+  }
+
+  .team-name {
+    @include font-size(4.6);
+    padding: 10px 0 10px;
+  }
+}

@@ -1,0 +1,39 @@
+@media only screen and (max-width: 830px) {
+  .gallery-box {
+    h2 {
+      @include font-size(4);
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .gallery-box {
+    h2 {
+      @include font-size(3.2);
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .gallery-box {
+    &:nth-child(odd),
+    &:nth-child(even),
+    &:nth-child(-n+2),
+    &:nth-last-child(-n+2) {
+      border-width: 5px 10px;
+      width: 100%;
+    }
+
+    &:first-child {
+      border-top-width: 10px;
+    }
+
+    &:last-child {
+      border-bottom-width: 10px;
+    }
+  }
+
+  .cover {
+    width: calc(100vw - 20px);
+  }
+}
