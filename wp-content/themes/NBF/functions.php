@@ -24,6 +24,8 @@ function style_script_includes() {
   wp_register_script('owlslider-lib-js', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js', '', '2.0.0-beta.2.4', true);
   wp_enqueue_script('owlslider-lib-js');
   wp_register_style('owlslider-lib-css', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.css', '', '2.0.0-beta.2.4');
+  wp_register_script('magnific', $template_uri . '/js/magnific.js', '', '', true);
+  wp_enqueue_script('magnific');
   wp_register_style('theme_style', $stylesheet_uri);
   wp_enqueue_style('theme_style');
 }
@@ -90,6 +92,11 @@ add_action('send_headers', 'add_ie_xua_header');
 
 add_image_size('team-image', 220, 220, true);
 add_image_size('shoots-cover', 940, 630, true);
+add_image_size('gallery-block', 500, 360, true);
+add_image_size('gallery-block2', 500, 380, true);
+add_image_size('gallery-block3', 500, 340, true);
+add_image_size('gallery-block4', 500, 320, true);
+add_image_size('gallery-block5', 500, 400, true);
 
 function get_template_output($file) {
   ob_start();

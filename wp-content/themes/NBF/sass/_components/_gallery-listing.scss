@@ -1,0 +1,39 @@
+.image-listing {
+  @include align-items(center);
+  margin: $division-width 0;
+}
+
+.gallery-box {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex-grow(1);
+  border: solid 5px $gallery-borders;
+  padding-top: 20px;
+
+  &:nth-child(odd) {
+    border-left-width: 10px;
+  }
+
+  &:nth-child(even) {
+    border-right-width: 10px;
+  }
+
+  &:nth-child(-n+2) {
+    border-top-width: 10px;
+  }
+
+  &:nth-last-child(-n+2) {
+    border-bottom-width: 10px;
+    }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+
+.cover {
+  width: calc(50vw - 15px);
+}

@@ -47,6 +47,11 @@ a {
   text-decoration: none;
 }
 
+small {
+  @include font-size(1.6);
+  color: $_white;
+}
+
 header {
   @include display-flex;
   @include justify-content(space-around);

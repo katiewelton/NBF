@@ -1,39 +1,47 @@
-.image-listing {
-  @include align-items(center);
-  margin: $division-width 0;
+.gallery-container {
+  @include justify-content(center);
+  margin: 5px 0;
 }
 
-.gallery-box {
-  @include display-flex;
+.gallery-block {
+  border: 10px solid $_green;
+  margin: 5px;
+  position: relative;
+  width: 30vw;
+
+  &:focus {
+    outline-color: $_pink;
+  }
+}
+
+.gallery-image {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.image-hover {
+  @include transition(opacity .3s ease);
   @include flex-direction(column);
-  @include justify-content(space-between);
-  @include align-items(center);
-  @include flex-grow(1);
-  border: solid 5px $gallery-borders;
-  padding-top: 20px;
+  @include justify-content(flex-end);
+  @include align-items(flex-end);
+  @include flex-grow(0);
+  background-color: rgba(0, 0, 0, .5);
+  color: $_white;
+  height: 100%;
+  left: 0;
+  line-height: normal;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
-  &:nth-child(odd) {
-    border-left-width: 10px;
-  }
-
-  &:nth-child(even) {
-    border-right-width: 10px;
-  }
-
-  &:nth-child(-n+2) {
-    border-top-width: 10px;
-  }
-
-  &:nth-last-child(-n+2) {
-    border-bottom-width: 10px;
-    }
-
-  h2 {
-    margin-bottom: 20px;
+  &:hover {
+    opacity: 1;
   }
 }
 
-
-.cover {
-  width: calc(50vw - 15px);
+.mfp-counter {
+  @include font-size(2.6);
 }
