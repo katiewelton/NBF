@@ -1,0 +1,29 @@
+@media only screen and (max-width: 660px) {
+  .header-menu {
+    padding: 0 20px;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    @include flex-direction(column);
+    height: 110px;
+    padding-top: 10px;
+  }
+
+  .header-menu {
+    margin-top: $division-width;
+    padding: 0;
+    width: 100%;
+  }
+}

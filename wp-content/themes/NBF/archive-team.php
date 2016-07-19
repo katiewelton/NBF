@@ -14,7 +14,7 @@ $results = $team->query($query_args);
 ?>
 
 <article class="page-intro">
-  <p>NightBearFoto began with two friends sharing a passion.</p>
+  <p>Night Bear Foto began with two friends sharing a passion.</p>
   <p>The team has since grown to five permanent members</p>
   <p>who have honed their photographic skills,</p>
   <p>adapted their light sources and now work together to create</p>
@@ -40,7 +40,7 @@ $results = $team->query($query_args);
 <?php endif; ?>
 
 <section class="social-bar grid">
-  <a href="https://www.facebook.com/areyoubearenough" target="_blank"><i class="fa fa-facebook-square"></i></a>
+  <a href="https://www.facebook.com/nightbearfoto" target="_blank"><i class="fa fa-facebook-square"></i></a>
   <a href="https://www.instagram.com/nightbearfoto/" target="_blank"><i class="fa fa-instagram"></i></a>
   <a href="https://twitter.com/nightbearfoto" target="_blank"><i class="fa fa-twitter-square"></i></a>
 </section>

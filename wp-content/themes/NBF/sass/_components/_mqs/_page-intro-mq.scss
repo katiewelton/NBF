@@ -1,0 +1,17 @@
+@media only screen and (max-width: 790px) {
+  .page-intro {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .page-intro {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .page-intro {
+    line-height: 1.2;
+  }
+}

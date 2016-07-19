@@ -23,10 +23,10 @@ if(have_posts()): while(have_posts()): the_post();
 ?>
 
 <article class="page-intro">
-  <p>Night Bear Foto are available for weddings, parties, festivals and other events</p>
-  <p>We also offer photoshoots for bands, groups and companies</p>
-  <p>We have a number of lightpainting packages available</p>
-  <p>Or we can work with you to build a custom package for your event</p>
+  <p>Welcome to our gallery!</p>
+  <p>Some of these albums are added to regularly, other's are one offs from events</p>
+  <p>Have you been part of a shoot recently? Check below to find your event album</p>
+  <p>Event albums are added within 1 month of the event finishing</p>
 </article>
 <main class="image-listing grid">
 
@@ -47,7 +47,7 @@ foreach($terms as $term):
 
 </main>
 <section class="social-bar grid">
-  <a href="https://www.facebook.com/areyoubearenough" target="_blank"><i class="fa fa-facebook-square"></i></a>
+  <a href="https://www.facebook.com/nightbearfoto" target="_blank"><i class="fa fa-facebook-square"></i></a>
   <a href="https://www.instagram.com/nightbearfoto/" target="_blank"><i class="fa fa-instagram"></i></a>
   <a href="https://twitter.com/nightbearfoto" target="_blank"><i class="fa fa-twitter-square"></i></a>
 </section>
