@@ -23,10 +23,9 @@ if(have_posts()): while(have_posts()): the_post();
 ?>
 
 <article class="page-intro">
-  <p>Welcome to our gallery!</p>
-  <p>Some of these albums are added to regularly, other's are one offs from events</p>
-  <p>Have you been part of a shoot recently? Check below to find your event album</p>
-  <p>Event albums are added within 1 month of the event finishing</p>
+
+<?php the_content(); ?>
+
 </article>
 <main class="image-listing grid">
 
