@@ -93,10 +93,7 @@ add_action('send_headers', 'add_ie_xua_header');
 add_image_size('team-image', 220, 220, true);
 add_image_size('shoots-cover', 940, 630, true);
 add_image_size('gallery-block', 500, 360, true);
-add_image_size('gallery-block2', 500, 380, true);
-add_image_size('gallery-block3', 500, 340, true);
-add_image_size('gallery-block4', 500, 320, true);
-add_image_size('gallery-block5', 500, 400, true);
+add_image_size('max-size', 1800, 9999);
 
 function get_template_output($file) {
   ob_start();

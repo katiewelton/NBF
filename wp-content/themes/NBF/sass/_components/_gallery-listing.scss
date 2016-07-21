@@ -43,6 +43,11 @@
   position: relative;
 }
 
+.cover {
+  display: block;
+  width: calc(50vw - 15px);
+}
+
 .hover {
   @include transition(opacity .3s ease);
   background-color: rgba($_orange, .5);
@@ -65,8 +70,4 @@
   .fa {
     margin: 1px 5px;
   }
-}
-
-.cover {
-  width: calc(50vw - 15px);
 }

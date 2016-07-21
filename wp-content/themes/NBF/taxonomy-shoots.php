@@ -46,7 +46,7 @@ if($results->have_posts()):
 
       $image_full = wp_get_attachment_image_src(
         get_post_thumbnail_id(get_the_ID()),
-        'full'
+        'max-size'
       )[0];
 
     ?>

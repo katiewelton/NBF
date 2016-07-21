@@ -11,6 +11,7 @@
 .cta-box {
   @include flex-direction(column);
   @include justify-content(center);
+  @include align-items(center);
   height: 100%;
   margin: 0 40px;
   text-align: center;

@@ -8,10 +8,9 @@ if(have_posts()): while(have_posts()): the_post();
 ?>
 
 <article class="page-intro">
-  <p>Got a query about hiring us?</p>
-  <p>Want to buy a print from us?</p>
-  <p>Or do you just have a question about light painting?</p>
-  <p>Whatever it is, we'd love to hear from you! Get in touch!</p>
+
+<?php the_content(); ?>
+
 </article>
 
 <?php wd_contact_form_maker(3); ?>

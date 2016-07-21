@@ -6,15 +6,7 @@
   }
 }
 
-@media only screen and (max-width: 630px) {
-  .gallery-box {
-    h2 {
-      @include font-size(3.2);
-    }
-  }
-}
-
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 768px) {
   .gallery-box {
     &:nth-child(odd),
     &:nth-child(even),
@@ -35,5 +27,13 @@
 
   .cover {
     width: calc(100vw - 20px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery-box {
+    h2 {
+      @include font-size(3.6);
+    }
   }
 }

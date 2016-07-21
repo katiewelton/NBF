@@ -4,6 +4,7 @@
 */
 get_header();
 $team_page_id = get_template_page_id('archive-team.php');
+$team_page = get_post($team_page_id);
 $team_fields = new CMB2Fields($team_page_id);
 $team = new Query('team');
 $query_args = [
@@ -14,24 +15,26 @@ $results = $team->query($query_args);
 ?>
 
 <article class="page-intro">
-  <p>Night Bear Foto began with two friends sharing a passion.</p>
-  <p>The team has since grown to five permanent members</p>
-  <p>who have honed their photographic skills,</p>
-  <p>adapted their light sources and now work together to create</p>
-  <p>portrait, landscape and abstract lightpaintings.</p>
+
+  <?php echo $team_page->post_content; ?>
+
 </article>
 
 <?php if($results->have_posts()): ?>
 
   <section class="team grid">
 
-    <?php while($results->have_posts()): $results->the_post();?>
+    <?php
+    while($results->have_posts()):
+      $results->the_post();
+      $team_fields->post_id = get_the_ID();
+    ?>
 
-    <div class="team-box grid">
-      <img src="<?php echo $team_fields->get_featured_image('team-image'); ?>" class="team-image" />
-      <h2 class="team-name"><?php the_title(); ?></h2>
-      <div class="team-details"><?php the_content(); ?></div>
-    </div>
+      <div class="team-box grid">
+        <img src="<?php echo $team_fields->get_featured_image('team-image'); ?>" class="team-image" />
+        <h2 class="team-name"><?php the_title(); ?></h2>
+        <div class="team-details"><?php the_content(); ?></div>
+      </div>
 
     <?php endwhile; ?>
 
